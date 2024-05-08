@@ -3,6 +3,9 @@ const input = document.querySelector("#input");
 const displayContainer = document.querySelector(".display-container");
 
 addButton.addEventListener("click", () => {
+  if (input.value === "") {
+    addButton.setAttribute("disabled");
+  }
   const newToDo = document.createElement("li");
   newToDo.innerText = input.value;
   displayContainer.append(newToDo);

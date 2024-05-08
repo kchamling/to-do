@@ -50,6 +50,7 @@ body {
   padding: 10px 20px;
   color: #555;
   font-size: 16px;
+  border-radius: 40px;
   font-weight: 500;
 }
 
@@ -76,6 +77,7 @@ body {
 
 .display-container li {
   list-style: none;
+  margin-left: 10px;
 }
 
 .display-container li span {
