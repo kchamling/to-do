@@ -3,7 +3,7 @@ const input = document.querySelector("#input");
 const displayContainer = document.querySelector(".display-container");
 
 addButton.addEventListener("click", () => {
-  const newToDo = document.createElement("p");
+  const newToDo = document.createElement("li");
   newToDo.innerText = input.value;
   displayContainer.append(newToDo);
 
@@ -12,6 +12,6 @@ addButton.addEventListener("click", () => {
   newToDo.append(closeIcon);
 
   closeIcon.addEventListener("click", () => {
-    displayContainer.remove(newToDo);
+    newToDo.remove();
   });
 });
